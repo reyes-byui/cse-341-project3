@@ -4,7 +4,7 @@ GET http://localhost:3001
 GET http://localhost:3001/items
 
 ### Get an Item by Id
-GET http://localhost:3001/items/67e00c2deff3266bb581f2de
+GET http://localhost:3001/items/67e23c6fe6d9ffa611a6b844
 
 ### Create an Item
 POST http://localhost:3001/items HTTP/1.1
@@ -13,26 +13,26 @@ Content-Type: application/json
 {
     "productType": "food",
     "productBrand": "French Baker",
-    "productName": "Hokkaido Bread",
-    "weightPerUnit": "NA",
-    "pricePerUnit": "$6.19",
-    "sellingPrice": "$7.50",
-    "expirationDate": "2025-03-28"
+    "productName": "Garlic Bread",
+    "weightPerUnit": "0",
+    "pricePerUnit": "7.19",
+    "sellingPrice": "9.50",
+    "expirationDate": "2025-03-29"
 }
 
 ### Update an Item
-PUT http://localhost:3001/items/67e00c2deff3266bb581f2de HTTP/1.1
+PUT http://localhost:3001/items/67e23c6fe6d9ffa611a6b844 HTTP/1.1
 Content-Type: application/json
 
 {
     "productType": "food",
     "productBrand": "French Baker",
-    "productName": "Hokkaido Bread",
-    "weightPerUnit": "NA",
-    "pricePerUnit": "$8.19",
-    "sellingPrice": "$9.50",
-    "expirationDate": "2025-03-28"
+    "productName": "Garlic Bread",
+    "weightPerUnit": "0",
+    "pricePerUnit": "8.19",
+    "sellingPrice": "9.50",
+    "expirationDate": "2025-03-29"
 }
 
 ### Delete an Item
-DELETE http://localhost:3001/items/67e00c2deff3266bb581f2de HTTP/1.1
+DELETE http://localhost:3001/items/67e23c6fe6d9ffa611a6b844 HTTP/1.1

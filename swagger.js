@@ -3,10 +3,10 @@ const swaggerAutogen = require('swagger-autogen')();
 const doc = {
 	info: {
 		title: "Items API",
-		description: "Items' API"
+		description: "API for Managing Items"
 	},
 	host: 'localhost:3001',
-	schemes: ['https', 'http']
+	schemes: ['http']
 };
 
 const outputFile = './swagger.json';
