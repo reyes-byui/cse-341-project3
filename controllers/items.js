@@ -15,7 +15,7 @@ const getAll = async (req, res) => {
 
 // get items by id
 const getSingle = async (req, res) => {
-    //#swagger.tags=['Hello World']
+    //#swagger.tags=['Items']
     try {
         const itemId = new ObjectId(req.params.id);
         const result = await mongodb.getDatabase().collection('items').findOne({ _id: itemId });
@@ -31,7 +31,7 @@ const getSingle = async (req, res) => {
 
 // create item
 const createItem = async (req, res) => {
-    //#swagger.tags=['Hello World']
+    //#swagger.tags=['Items']
     // Validate input
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -58,7 +58,7 @@ const createItem = async (req, res) => {
 
 // update item
 const updateItem = async (req, res) => {
-    //#swagger.tags=['Hello World']
+    //#swagger.tags=['Items']
     // Validate input
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -90,7 +90,7 @@ const updateItem = async (req, res) => {
 
 // delete item
 const deleteItem = async (req, res) => {
-    //#swagger.tags=['Hello World']
+    //#swagger.tags=['Items']
     try {
         const itemId = new ObjectId(req.params.id);
         const response = await mongodb.getDatabase().collection('items').deleteOne({ _id: itemId });
